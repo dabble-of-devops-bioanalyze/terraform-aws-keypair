@@ -13,13 +13,12 @@ variable "region" {
   description = "AWS Region"
 }
 
-
 variable "private_key_file" {
-  type    = str
+  type    = string
   default = "files/user-data/key-pair/id_rsa"
 }
 
 variable "public_key_file" {
-  type    = str
+  type    = string
   default = "files/user-data/key-pair/id_rsa.pub"
 }
